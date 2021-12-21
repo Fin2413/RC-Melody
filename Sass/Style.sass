@@ -1,0 +1,262 @@
+$text-color: #fff
+$border-color: #3596F5
+$fonts-color: #635854
+$font-robot: Robot, sans-serif
+$font-bebas: Bebas Neue, sans-serif
+
+*
+    font-family: "Robot", "Bebas Neue2", "Bebas Neue Bold", sans-serif
+    box-sizing: border-box
+.header
+    background-color: $fonts-color
+    height: 81px
+    border-bottom: 4px solid $border-color
+    .navbar
+        max-width: 1280px
+        margin: auto
+        display: flex //гибкий блок
+        justify-content: space-between
+        align-items: center
+        .navbar-nav
+            display: flex
+            .navbar-menu
+                margin: 0 //отключение внешних отступов
+                padding: 0 //отключение внутрених отступов
+                list-style: none //отключение точек у списка
+                display: flex
+                text-align: center
+                font-style: 400
+            .navbar-item
+                display: inline-flex
+                .navbtn
+                    display: flex
+                    border: none
+                    text-align: center
+                    height: 100%
+                    margin: 5px
+                    background-color: $fonts-color
+                    height: 72px
+                    justify-content: space-between
+                    align-items: center
+                    &:hover
+                        background-color: $border-color
+                        cursor: pointer
+                .navbar-link
+                    text-decoration: none
+                    color: $text-color
+                    margin: 0 40px
+                    font-family: $font-robot
+
+    .navbar-contacts
+        text-align: right
+        .navbar-text
+            display: block
+            color: $text-color
+            margin-bottom: 4px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            font-family: $font-robot
+        .navbar-phone
+            font-style: normal
+            font-weight: bold
+            font-size: 17px
+            color: $text-color
+            text-decoration: none
+            font-family: $font-robot
+            &:hover
+                color: $border-color
+
+.main
+    max-width: 1280px
+    margin: auto
+    padding-top: 54px
+    display: flex
+    .main-image
+        .home-img
+            path
+                opacity: 0
+                &:hover
+                    opacity: 1
+                    cursor: pointer
+            .current-floor
+                opacity: 1
+    .main-info
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        flex-grow: 1
+        text-align: center
+        .main-title
+            font-family: "Bebas Neue Bold", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 37px
+            line-height: 37px
+            color: $fonts-color
+            margin: 0
+        .counter-group
+            display: flex
+            flex-direction: column
+            align-items: center
+            .counter-button
+                background-color: $text-color
+                border: none
+                &:hover
+                    cursor: pointer
+                .counter-arrow-down
+                    transform: rotateX(180deg)
+        .counter
+            font-family: Bebas Neue
+            color: $fonts-color
+            font-size: 124px
+            margin-top: 10px
+        .button-primary
+            background: $border-color
+            border: none
+            border-radius: 6px
+            color: $text-color
+            width: 297px
+            height: 51px
+            margin-top: 116px
+            padding: 16px 36px
+            &:hover
+                cursor: pointer
+                box-shadow: 0px 0px 2px black
+.modal
+    position: fixed //Фиксированная позиция, поверх всего сайта
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.8)
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: 0
+    transform: scale(0)
+    transition: opacity 0.2s
+    .modal-dialog
+        position: relative
+        max-width: 1000px
+        min-height: 565px
+        background-color: #fff
+        flex-grow: 1
+        display: flex
+        opacity: 0
+        transform: translateY(-10%)
+        transition: transform 0.2s
+        transition-delay: 0.2s
+        .modal-img
+            background-color: #EBEBEB
+            width: 60%
+            text-align: center
+            padding: 50px
+            .modal-title
+                font-family: "Bebas Neue Bold"
+                font-size: 24px
+                margin-top: 18px
+                margin-bottom: 25px
+        .flats
+            path
+                opacity: 0
+                &:hover
+                    opacity: 1
+                    cursor: pointer
+
+        .modal-info
+            padding: 50px 46px
+            width: 40%
+            .flat-list
+                padding: 0
+                list-style: none
+                margin-top: 55px
+                .flat-item
+                    margin-bottom: 10px
+                .flat-link
+                    font-family: $font-robot
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 19px
+                    text-decoration: none
+                    color: $fonts-color
+                    &:hover
+                        color: $border-color
+                        text-decoration: underline
+            .modal-alert
+                font-family: Roboto
+                font-style: italic
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                color: $fonts-color
+                margin-top: 56px
+    .modal-close-button
+        position: absolute
+        right: 27px
+        top: 38px
+        border: none
+        cursor: pointer
+        background-color: #fff
+
+.footer
+    background-color: #D7D7D7
+    border-top: 4px solid $border-color
+    margin-top: 100px
+    padding: 50px
+    .footer-navbar
+        max-width: 1280px
+        margin: auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .footer-logo
+            display: inline-block
+            margin-right: 20px
+        .footer-navbar-menu
+            display: flex
+            margin: 0
+            padding: 0
+            list-style: none
+            text-align: center
+            .footer-navbar-item
+                display: flex
+                .footer-navbar-a
+                    margin-right: 15px
+                    margin-left: 15px
+                    text-decoration: none
+                .footer-navbar-nav-link
+                    margin-left: 250px
+                    .footer-navbar-link
+                        margin-left: 20px
+                        margin-right: 20px
+                        color: $fonts-color
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 16px
+                        line-height: 19px
+                        &:hover
+                            color: $border-color
+                            text-decoration: none
+    .footer-navbar-contacts
+        text-align: center
+        margin-right: 20px
+        .footer-navbar-text
+            display: block
+            color: $fonts-color
+            margin-bottom: 4px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            font-family: $font-robot
+        .footer-navbar-phone
+            font-style: normal
+            font-weight: bold
+            font-size: 17px
+            color: $fonts-color
+            text-decoration: none
+            font-family: $font-robot
+            &:hover
+                color: $border-color

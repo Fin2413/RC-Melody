@@ -1,0 +1,444 @@
+* {
+    font-family: "Robot", "Bebas Neue2", "Bebas Neue Bold", sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #635854;
+    height: 81px;
+    border-bottom: 4px solid #3596F5;
+}
+
+.header .navbar {
+    max-width: 1280px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header .navbar .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header .navbar .navbar-nav .navbar-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    font-style: 400;
+}
+
+.header .navbar .navbar-nav .navbar-item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.header .navbar .navbar-nav .navbar-item .navbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+    text-align: center;
+    height: 100%;
+    margin: 5px;
+    background-color: #635854;
+    height: 72px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header .navbar .navbar-nav .navbar-item .navbtn:hover {
+    background-color: #3596F5;
+    cursor: pointer;
+}
+
+.header .navbar .navbar-nav .navbar-item .navbar-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 40px;
+    font-family: Robot, sans-serif;
+}
+
+.header .navbar-contacts {
+    text-align: right;
+}
+
+.header .navbar-contacts .navbar-text {
+    display: block;
+    color: #fff;
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Robot, sans-serif;
+}
+
+.header .navbar-contacts .navbar-phone {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Robot, sans-serif;
+}
+
+.header .navbar-contacts .navbar-phone:hover {
+    color: #3596F5;
+}
+
+.main {
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 54px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.main .main-image .home-img path {
+    opacity: 0;
+}
+
+.main .main-image .home-img path:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.main .main-image .home-img .current-floor {
+    opacity: 1;
+}
+
+.main .main-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.main .main-info .main-title {
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 37px;
+    color: #635854;
+    margin: 0;
+}
+
+.main .main-info .counter-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.main .main-info .counter-group .counter-button {
+    background-color: #fff;
+    border: none;
+}
+
+.main .main-info .counter-group .counter-button:hover {
+    cursor: pointer;
+}
+
+.main .main-info .counter-group .counter-button .counter-arrow-down {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.main .main-info .counter {
+    font-family: Bebas Neue;
+    color: #635854;
+    font-size: 124px;
+    margin-top: 10px;
+}
+
+.main .main-info .button-primary {
+    background: #3596F5;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    width: 297px;
+    height: 51px;
+    margin-top: 116px;
+    padding: 16px 36px;
+}
+
+.main .main-info .button-primary:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 2px black;
+    box-shadow: 0px 0px 2px black;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.is-open {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal .modal-dialog {
+    position: relative;
+    max-width: 1000px;
+    min-height: 565px;
+    background-color: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.is-open>.modal-dialog {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s all;
+}
+
+a.current-flats-item {
+    color: #3596F5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+path.current-flats {
+    opacity: 1;
+}
+
+.modal .modal-dialog .modal-img {
+    background-color: #EBEBEB;
+    width: 60%;
+    text-align: center;
+    padding: 50px;
+}
+
+.modal .modal-dialog .modal-img .modal-title {
+    font-family: "Bebas Neue Bold";
+    font-size: 24px;
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+
+.modal .modal-dialog .flats path {
+    opacity: 0;
+}
+
+.modal .modal-dialog .flats path:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal .modal-dialog .modal-info {
+    padding: 50px 46px;
+    width: 40%;
+}
+
+.modal .modal-dialog .modal-info .flat-list {
+    padding: 0;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.modal .modal-dialog .modal-info .flat-list .flat-item {
+    margin-bottom: 10px;
+}
+
+.modal .modal-dialog .modal-info .flat-list .flat-link {
+    font-family: Robot, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #635854;
+}
+
+.modal .modal-dialog .modal-info .flat-list .flat-link:hover {
+    color: #3596F5;
+    text-decoration: underline;
+}
+
+.modal .modal-dialog .modal-info .modal-alert {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #635854;
+    margin-top: 56px;
+}
+
+.modal .modal-close-button {
+    position: absolute;
+    right: 27px;
+    top: 38px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #D7D7D7;
+    border-top: 4px solid #3596F5;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.footer .footer-navbar {
+    max-width: 1280px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer .footer-navbar .footer-logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer .footer-navbar .footer-navbar-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.footer .footer-navbar .footer-navbar-menu .footer-navbar-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer .footer-navbar .footer-navbar-menu .footer-navbar-item .footer-navbar-a {
+    margin-right: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.footer .footer-navbar .footer-navbar-menu .footer-navbar-item .footer-navbar-nav-link {
+    margin-left: 250px;
+}
+
+.footer .footer-navbar .footer-navbar-menu .footer-navbar-item .footer-navbar-nav-link .footer-navbar-link {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #635854;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer .footer-navbar .footer-navbar-menu .footer-navbar-item .footer-navbar-nav-link .footer-navbar-link:hover {
+    color: #3596F5;
+    text-decoration: none;
+}
+
+.footer .footer-navbar-contacts {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.footer .footer-navbar-contacts .footer-navbar-text {
+    display: block;
+    color: #635854;
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Robot, sans-serif;
+}
+
+.footer .footer-navbar-contacts .footer-navbar-phone {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: #635854;
+    text-decoration: none;
+    font-family: Robot, sans-serif;
+}
+
+.footer .footer-navbar-contacts .footer-navbar-phone:hover {
+    color: #3596F5;
+}
+
+
+/*# sourceMappingURL=Style.css.map */
